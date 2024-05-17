@@ -16,3 +16,5 @@ selection_range = 40;
 //attack
 timer = 0;
 attack_intermission = 30;
+
+hp = 100;

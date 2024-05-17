@@ -35,9 +35,7 @@ function HandleState()
 			selected_job = FindJob(x,y,obj_interactible);
 			if (selected_job != noone)
 			{
-				show_debug_message(string(selected_job.state));
 				selected_job.state = STATE.WAITING;
-				show_debug_message(string(selected_job.state));
 				state = STATE.DOING_A_TASK;
 			}
 			break;

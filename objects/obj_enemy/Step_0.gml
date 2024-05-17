@@ -12,12 +12,12 @@ function HandleState()
 	{
 		case(STATE.MARCHING):
 			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE
-			if (collision_line(x, y, x + lengthdir_x(attack_range, direction), y, player_allied_objects, 0, 0))
+			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, player_allied_objects, 0, 0))
 			{
 				//show_debug_message("FOUND ");
 				if(timer >= attack_intermission)
 				{
-					Attack(20, obj_novice_attack, "Instances");
+					Attack(20, obj_enemy_attack, "Instances");
 					timer = 0;
 				}
 				//HARD CODED Starting to move back!!! CHANGE!!!

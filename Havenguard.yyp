@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_barricade_built","path":"objects/obj_barricade_built/obj_barricade_built.yy",},},
     {"id":{"name":"obj_barricade_unbuilt","path":"objects/obj_barricade_unbuilt/obj_barricade_unbuilt.yy",},},
+    {"id":{"name":"obj_enemy_attack","path":"objects/obj_enemy_attack/obj_enemy_attack.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_highlight","path":"objects/obj_highlight/obj_highlight.yy",},},

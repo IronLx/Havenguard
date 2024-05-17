@@ -15,7 +15,7 @@ function HandleState()
 			{
 				progress = 0;
 				//level up TBC
-				instance_change(obj_barricade_built,false);
+				instance_change(obj_barricade_built,true);
 				state = STATE.IDLE;
 			}
 			break;

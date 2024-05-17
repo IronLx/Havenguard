@@ -18,3 +18,5 @@ movement_target = 200;
 //peons status decising on his behaviour
 state = STATE.IDLE;
 selected_job = noone;
+
+hp = 100;

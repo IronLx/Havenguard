@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barricade_built",
+  "%Name":"obj_enemy_attack",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_barricade_built",
+  "name":"obj_enemy_attack",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactible",
-    "path":"objects/obj_interactible/obj_interactible.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_barricade_2",
-    "path":"sprites/spr_barricade_2/spr_barricade_2.yy",
+    "name":"spr_attack",
+    "path":"sprites/spr_attack/spr_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

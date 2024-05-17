@@ -13,5 +13,4 @@ progress_w = -30;
 progress_f_size = 60;
 
 //being worked on
-level = 0;
 state = STATE.IDLE;

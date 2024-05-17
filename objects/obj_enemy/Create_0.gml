@@ -11,7 +11,7 @@ state = STATE.MARCHING;
 
 //enemy stats
 player_allied_objects = [obj_player, obj_peon, obj_barricade_built];
-attack_range = 40;
+attack_detection_range = 20;
 
 //attack
 timer = 0;
