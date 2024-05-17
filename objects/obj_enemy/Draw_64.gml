@@ -1,0 +1,1 @@
+//draw_line(x, y, x + lengthdir_x(attack_range, direction), y);
