@@ -10,7 +10,7 @@ calc_move = 1;
 state = STATE.MARCHING;
 
 //enemy stats
-player_allied_objects = [obj_player, obj_peon, obj_barricade];
+player_allied_objects = [obj_player, obj_peon, obj_barricade_built];
 attack_range = 40;
 
 //attack

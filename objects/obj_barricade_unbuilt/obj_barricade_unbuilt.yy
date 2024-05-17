@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barricade",
+  "%Name":"obj_barricade_unbuilt",
   "eventList":[],
   "managed":true,
-  "name":"obj_barricade",
+  "name":"obj_barricade_unbuilt",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
