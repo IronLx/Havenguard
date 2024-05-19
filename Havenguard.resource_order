@@ -33,6 +33,7 @@
     {"name":"spr_barricade_2","order":8,"path":"sprites/spr_barricade_2/spr_barricade_2.yy",},
     {"name":"spr_build_selected","order":11,"path":"sprites/spr_build_selected/spr_build_selected.yy",},
     {"name":"spr_build_waiting","order":12,"path":"sprites/spr_build_waiting/spr_build_waiting.yy",},
+    {"name":"spr_empty","order":15,"path":"sprites/spr_empty/spr_empty.yy",},
     {"name":"spr_enemy","order":13,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_ground","order":1,"path":"sprites/spr_ground/spr_ground.yy",},
     {"name":"spr_highlight","order":4,"path":"sprites/spr_highlight/spr_highlight.yy",},

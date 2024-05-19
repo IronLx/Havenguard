@@ -13,41 +13,34 @@ with(owner)
 	other.x = x + (other.range * other.image_xscale);
 }
 
-if (place_meeting(x, y, obj_peon)) {
-    var _target = instance_place(x, y, obj_peon);
-    if (_target != noone) {
-        _target.hp -= attack_damage;
-        if (_target.hp <= 0) {
-            instance_destroy(_target);
-        }
-        //effect_create_above(ef_explosion, target.x, target.y, c_red);
-        instance_destroy();
-    }
-}
-
-if (place_meeting(x, y, obj_barricade_built)) {
-    var _target = instance_place(x, y, obj_barricade_built);
-    if (_target != noone) {
-        _target.hp -= attack_damage;
-        if (_target.hp <= 0) {
-            with(_target)
-			{
-				instance_change(obj_barricade_unbuilt,true);
-			}
-        }
-        //effect_create_above(ef_explosion, target.x, target.y, c_red);
-        instance_destroy();
-    }
-}
-
-if (place_meeting(x, y, obj_player)) {
-    var _target = instance_place(x, y, obj_player);
-    if (_target != noone) {
-        _target.hp -= attack_damage;
-        if (_target.hp <= 0) {
-            instance_destroy(_target);
-        }
-        //effect_create_above(ef_explosion, target.x, target.y, c_red);
-        instance_destroy();
-    }
+if (!hit_registered && place_meeting(x, y, targets)) 
+{
+	hit_registered = true;
+	for (var i = 0; i < array_length(targets); i++) 
+	{
+	    var _target_type = targets[i];
+	    if (place_meeting(x, y, _target_type)) {
+	        var _target = instance_place(x, y, _target_type);
+	        if (_target != noone) {
+	            _target.hp -= attack_damage;
+	            if (_target.hp <= 0) 
+				{
+	                switch(_target_type)
+					{
+						case(obj_peon):
+							instance_destroy(_target);
+							break;
+						case(obj_player):
+							instance_destroy(_target);
+							break;
+						case(obj_barricade_built):
+							with(_target)
+								instance_change(obj_barricade_unbuilt,true);
+							break;
+					}
+	            }
+	            break; // Exit the loop after handling the collision
+	        }
+	    }
+	}
 }

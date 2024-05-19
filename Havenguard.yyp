@@ -53,6 +53,7 @@
     {"id":{"name":"spr_barricade_2","path":"sprites/spr_barricade_2/spr_barricade_2.yy",},},
     {"id":{"name":"spr_build_selected","path":"sprites/spr_build_selected/spr_build_selected.yy",},},
     {"id":{"name":"spr_build_waiting","path":"sprites/spr_build_waiting/spr_build_waiting.yy",},},
+    {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
     {"id":{"name":"spr_highlight","path":"sprites/spr_highlight/spr_highlight.yy",},},
