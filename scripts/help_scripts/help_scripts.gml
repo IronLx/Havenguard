@@ -10,20 +10,28 @@ enum STATE
 	MARCHING
 }
 
+enum PLAYER_STATE
+{
+	IDLE,
+	ATTACKING,
+	RUNNING
+}
 
-
-function Animate2dMovement(_idle_sprite, _running_sprite, _horzsp)
+function Animate2dMovement(_idle_sprite, _running_sprite, _horzsp, _is_animating)
 {
 	image_speed = 1;
 	//Standing Still
-	if(_horzsp == 0)
+	if(!_is_animating)
 	{
-		sprite_index = _idle_sprite;
-	}
-	//Run
-	else
-	{
-		sprite_index = _running_sprite;
+		if(_horzsp == 0)
+		{
+			sprite_index = _idle_sprite;
+		}
+		//Run
+		else
+		{
+			sprite_index = _running_sprite;
+		}
 	}
 	//Direction
 	if (_horzsp != 0) image_xscale = sign(_horzsp);

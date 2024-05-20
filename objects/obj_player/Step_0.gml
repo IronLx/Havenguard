@@ -1,13 +1,5 @@
 /// @description Handles Key Input, Movement, Selection and Animation
 //FUNCTIONALITY
-function Attack(_range,_type,_layer)
-{
-	var _attack = instance_create_layer(x + (_range * image_xscale), y, _layer, _type);
-	_attack.image_xscale = image_xscale;
-	_attack.range = _range;
-	_attack.owner = obj_player;
-}
-
 function GetInput()
 {
 	key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
@@ -49,6 +41,9 @@ function Movement()
 		horzsp = 0;
 	}
 	
+	if(is_animating)
+		horzsp = 0;
+	
 	//Move horizontally
 	x = x + horzsp;
 	//Direction
@@ -86,12 +81,10 @@ function SelectToHighlight()
 }
 
 //EXECUTION
-GetInput();
-
-Movement();
-
-Animate2dMovement(spr_player, spr_player_run, horzsp);
-
-SelectToHighlight();
-
-timer++;
+if(state != PLAYER_STATE.ATTACKING)
+{
+	GetInput();
+	Movement();
+	Animate2dMovement(spr_player, spr_player_run, horzsp, is_animating);
+	SelectToHighlight();
+}

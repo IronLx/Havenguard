@@ -61,6 +61,7 @@
     {"id":{"name":"spr_p_filling","path":"sprites/spr_p_filling/spr_p_filling.yy",},},
     {"id":{"name":"spr_peon_run","path":"sprites/spr_peon_run/spr_peon_run.yy",},},
     {"id":{"name":"spr_peon","path":"sprites/spr_peon/spr_peon.yy",},},
+    {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},

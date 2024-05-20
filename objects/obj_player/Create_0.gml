@@ -14,7 +14,9 @@ hascontrol = true;
 selection_range = 40;
 
 //attack
-timer = 0;
-attack_intermission = 30;
+attack_available = true;
+is_animating = false;
 
 hp = 100;
+
+state = PLAYER_STATE.IDLE;

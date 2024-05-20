@@ -41,6 +41,7 @@
     {"name":"spr_p_filling","order":7,"path":"sprites/spr_p_filling/spr_p_filling.yy",},
     {"name":"spr_peon_run","order":10,"path":"sprites/spr_peon_run/spr_peon_run.yy",},
     {"name":"spr_peon","order":5,"path":"sprites/spr_peon/spr_peon.yy",},
+    {"name":"spr_player_attack","order":16,"path":"sprites/spr_player_attack/spr_player_attack.yy",},
     {"name":"spr_player_run","order":9,"path":"sprites/spr_player_run/spr_player_run.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
   ],
