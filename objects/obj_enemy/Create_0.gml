@@ -14,6 +14,5 @@ player_allied_objects = [obj_player, obj_peon, obj_barricade_built];
 attack_detection_range = 20;
 
 //attack
-timer = 0;
 attack_intermission = 30;
 hp = 10;

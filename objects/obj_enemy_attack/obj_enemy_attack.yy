@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_attack",
-    "path":"sprites/spr_attack/spr_attack.yy",
+    "name":"spr_enemy_attack_effect",
+    "path":"sprites/spr_enemy_attack_effect/spr_enemy_attack_effect.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,33 +1,23 @@
-function Attack(_range,_type,_layer)
-{
-	var _attack = instance_create_layer(x + (_range * image_xscale), y, _layer, _type);
-	_attack.image_xscale = image_xscale;
-	_attack.range = _range;
-	_attack.owner = obj_enemy;
-}
-
 function HandleState()
 {
 	switch(state)
 	{
 		case(STATE.MARCHING):
 			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE
+			Movement();
 			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, player_allied_objects, 0, 0))
 			{
-				//show_debug_message("FOUND ");
-				if(timer >= attack_intermission)
-				{
-					Attack(20, obj_enemy_attack, "Instances");
-					timer = 0;
-				}
-				//HARD CODED Starting to move back!!! CHANGE!!!
-				calc_move = 0;
+				state = STATE.ATTACKING;
+				sprite_index = spr_enemy_attack;
+				image_index = 0; // Ensure the animation starts from the beginning
+				image_speed = 1; // Set the animation speed
+				alarm[0] = 50;
+				alarm[1] = 30;
 			}
-			else calc_move = 1;
-			Movement();
+			break;
+		case(STATE.ATTACKING):
 			break;
 	}
-	timer++;
 }
 
 function Movement()
