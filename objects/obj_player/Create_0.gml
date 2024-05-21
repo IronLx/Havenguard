@@ -20,3 +20,8 @@ is_animating = false;
 hp = 100;
 
 state = PLAYER_STATE.IDLE;
+
+// Camera variables
+cam = view_camera[0];
+camera_width = camera_get_view_width(cam);
+camera_height = camera_get_view_height(cam);

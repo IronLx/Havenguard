@@ -7,4 +7,4 @@ function AttackEffect(_range,_type,_layer)
 	_attack.owner = self;
 }
 
-AttackEffect(40, obj_player_attack, "Instances");
+AttackEffect(40, obj_player_attack, "Attacks");

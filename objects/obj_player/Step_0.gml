@@ -80,6 +80,26 @@ function SelectToHighlight()
 	}
 }
 
+function CameraFollow()
+{
+	// Get player position
+	var player_x = obj_player.x;
+	var player_y = obj_player.y;
+
+	// Update camera position
+	var target_x = player_x - (camera_width / 2);
+	var target_y = player_y - (camera_height / 2);
+
+	// Smooth camera follow (optional)
+	var smooth_factor = 0.1;
+	var cam_x = camera_get_view_x(view_camera[0]);
+	var cam_y = camera_get_view_y(view_camera[0]);
+	var new_cam_x = lerp(cam_x, target_x, smooth_factor);
+	var new_cam_y = lerp(cam_y, target_y, smooth_factor);
+
+	camera_set_view_pos(view_camera[0], new_cam_x, new_cam_y);
+}
+
 //EXECUTION
 if(state != PLAYER_STATE.ATTACKING)
 {
@@ -87,4 +107,5 @@ if(state != PLAYER_STATE.ATTACKING)
 	Movement();
 	Animate2dMovement(spr_player, spr_player_run, horzsp, is_animating);
 	SelectToHighlight();
+	CameraFollow();
 }
