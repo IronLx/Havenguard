@@ -21,6 +21,7 @@
     {"name":"obj_barricade_unbuilt","order":6,"path":"objects/obj_barricade_unbuilt/obj_barricade_unbuilt.yy",},
     {"name":"obj_enemy_attack","order":10,"path":"objects/obj_enemy_attack/obj_enemy_attack.yy",},
     {"name":"obj_enemy","order":8,"path":"objects/obj_enemy/obj_enemy.yy",},
+    {"name":"obj_game_master","order":11,"path":"objects/obj_game_master/obj_game_master.yy",},
     {"name":"obj_ground","order":1,"path":"objects/obj_ground/obj_ground.yy",},
     {"name":"obj_highlight","order":4,"path":"objects/obj_highlight/obj_highlight.yy",},
     {"name":"obj_interactible","order":3,"path":"objects/obj_interactible/obj_interactible.yy",},

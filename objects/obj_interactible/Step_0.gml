@@ -5,7 +5,6 @@ function HandleState()
 	{
 		case(STATE.SELECTED_FOR_UPGRADE):
 			break;
-		
 		case(STATE.UPGRADING):
 			//progress through the upgrade
 			if(progress < progress_max)
@@ -19,7 +18,6 @@ function HandleState()
 				state = STATE.IDLE;
 			}
 			break;
-		
 		case(STATE.IDLE):
 			break;
 	}

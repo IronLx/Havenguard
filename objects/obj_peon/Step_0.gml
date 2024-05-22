@@ -75,6 +75,16 @@ function HandleState()
 				selected_job = noone;
 			}
 			break;
+		case(STATE.DYING):
+			if(selected_job != noone)
+			{
+				selected_job.progress = 0;
+				selected_job.state = STATE.IDLE;
+				selected_job = noone;
+			}
+			//Handle dying (animation etc)
+			instance_destroy();
+			break;
 	}
 }
 function Movement()

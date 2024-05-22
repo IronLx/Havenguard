@@ -8,14 +8,15 @@ enum STATE
 	WAITING,
 	UPGRADING,
 	MARCHING,
-	ATTACKING
+	ATTACKING,
+	DYING,
 }
 
 enum PLAYER_STATE
 {
 	IDLE,
 	ATTACKING,
-	RUNNING
+	RUNNING,
 }
 
 function Animate2dMovement(_idle_sprite, _running_sprite, _horzsp, _is_animating)

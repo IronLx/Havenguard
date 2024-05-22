@@ -28,7 +28,7 @@ if (!hit_registered && place_meeting(x, y, targets))
 	                switch(_target_type)
 					{
 						case(obj_peon):
-							instance_destroy(_target);
+							_target.state = STATE.DYING;
 							break;
 						case(obj_player):
 							instance_destroy(_target);

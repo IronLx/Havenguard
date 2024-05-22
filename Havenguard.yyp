@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"Havenguard",
   "resources":[
@@ -38,6 +38,7 @@
     {"id":{"name":"obj_barricade_unbuilt","path":"objects/obj_barricade_unbuilt/obj_barricade_unbuilt.yy",},},
     {"id":{"name":"obj_enemy_attack","path":"objects/obj_enemy_attack/obj_enemy_attack.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_game_master","path":"objects/obj_game_master/obj_game_master.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_highlight","path":"objects/obj_highlight/obj_highlight.yy",},},
     {"id":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},},
@@ -45,7 +46,7 @@
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"help_scripts","path":"scripts/help_scripts/help_scripts.yy",},},
     {"id":{"name":"remeber","path":"scripts/remeber/remeber.yy",},},
     {"id":{"name":"spr_barricade_1","path":"sprites/spr_barricade_1/spr_barricade_1.yy",},},
@@ -72,7 +73,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

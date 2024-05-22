@@ -88,7 +88,7 @@ function CameraFollow()
 
 	// Update camera position
 	var target_x = player_x - (camera_width / 2);
-	var target_y = player_y - (camera_height / 2);
+	var target_y = player_y - (camera_height / 1.5);
 
 	// Smooth camera follow (optional)
 	var smooth_factor = 0.1;
@@ -106,6 +106,7 @@ if(state != PLAYER_STATE.ATTACKING)
 	GetInput();
 	Movement();
 	Animate2dMovement(spr_player, spr_player_run, horzsp, is_animating);
-	SelectToHighlight();
-	CameraFollow();
 }
+
+//CameraFollow();
+SelectToHighlight();
