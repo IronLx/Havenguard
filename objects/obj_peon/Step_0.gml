@@ -79,7 +79,7 @@ function HandleState()
 			if(selected_job != noone)
 			{
 				selected_job.progress = 0;
-				selected_job.state = STATE.IDLE;
+				selected_job.state = STATE.SELECTED_FOR_UPGRADE;
 				selected_job = noone;
 			}
 			//Handle dying (animation etc)

@@ -105,7 +105,7 @@ if(state != PLAYER_STATE.ATTACKING)
 {
 	GetInput();
 	Movement();
-	Animate2dMovement(spr_player, spr_player_run, horzsp, is_animating);
+	Animate2dMovement(spr_player_idle, spr_player_run, horzsp, is_animating);
 }
 
 //CameraFollow();

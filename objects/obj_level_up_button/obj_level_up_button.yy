@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_master",
+  "%Name":"obj_level_up_button",
   "eventList":[],
   "managed":true,
-  "name":"obj_game_master",
+  "name":"obj_level_up_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_level_up_button",
+    "path":"sprites/spr_level_up_button/spr_level_up_button.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
