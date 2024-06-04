@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_master",
+  "%Name":"obj_townhall",
   "eventList":[],
   "managed":true,
-  "name":"obj_game_master",
+  "name":"obj_townhall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactible",
+    "path":"objects/obj_interactible/obj_interactible.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_townhall",
+    "path":"sprites/spr_townhall/spr_townhall.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

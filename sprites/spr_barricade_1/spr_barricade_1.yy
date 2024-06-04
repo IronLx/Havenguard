@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c9b2de6d-3c00-4111-ab16-27921b708441","name":"c9b2de6d-3c00-4111-ab16-27921b708441","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"beef8e33-3714-42d8-b954-a0c40a93ca00","name":"beef8e33-3714-42d8-b954-a0c40a93ca00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"83a9569c-2582-4376-96a2-bef3249c0da2","blendMode":0,"displayName":"default","isLocked":false,"name":"83a9569c-2582-4376-96a2-bef3249c0da2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"57d6fca3-69fe-40f0-bad6-bd3aecb79cbd","blendMode":0,"displayName":"default","isLocked":false,"name":"57d6fca3-69fe-40f0-bad6-bd3aecb79cbd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_barricade_1",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9b2de6d-3c00-4111-ab16-27921b708441","path":"sprites/spr_barricade_1/spr_barricade_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e8935eda-3019-464d-8f43-bed15538df29","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"beef8e33-3714-42d8-b954-a0c40a93ca00","path":"sprites/spr_barricade_1/spr_barricade_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0705a87a-7df2-4704-97d7-108f8df0fad6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":20,
-    "yorigin":48,
+    "yorigin":64,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
