@@ -17,6 +17,9 @@ function HandleState()
 			break;
 		case(STATE.ATTACKING):
 			break;
+		case(STATE.DYING):
+			instance_destroy();
+			break;
 	}
 }
 
@@ -61,4 +64,5 @@ function Movement()
 	y = y + vertsp;
 }
 
+CheckHealth();
 HandleState();
