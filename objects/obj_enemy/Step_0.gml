@@ -5,7 +5,7 @@ function HandleState()
 		case(STATE.MARCHING):
 			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE
 			Movement();
-			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, player_allied_objects, 0, 0))
+			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, global.player_allied_objects, 0, 0))
 			{
 				state = STATE.ATTACKING;
 				sprite_index = spr_enemy_attack;
@@ -27,10 +27,10 @@ function Movement()
 	vertsp = vertsp + grav;
 
 	//Horizontal Collision
-	if(place_meeting(x+horzsp,y,obj_wall))
+	if(place_meeting(x+horzsp,y,obj_wall_block))
 	{
 		//Move pixel by pixel towards the walls
-		while(!place_meeting(x+sign(horzsp),y,obj_wall))
+		while(!place_meeting(x+sign(horzsp),y,obj_wall_block))
 		{
 			x = x + sign(horzsp);
 		}

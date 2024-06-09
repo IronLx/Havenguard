@@ -14,3 +14,8 @@ progress_f_size = 60;
 
 //being worked on
 state = STATE.IDLE;
+previous_state = STATE.IDLE;
+level = 0;
+pre_level = 0;
+
+is_upgradeable = false;

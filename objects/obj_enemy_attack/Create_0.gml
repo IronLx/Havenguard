@@ -9,4 +9,4 @@ range = 0;
 owner = noone;
 attack_damage = 20;
 
-targets = [obj_player, obj_peon, obj_barricade_built, obj_townhall];
+targets = [obj_player, obj_peon, obj_barricade_built, obj_townhall_0];

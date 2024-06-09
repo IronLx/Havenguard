@@ -30,10 +30,10 @@ function Movement()
 
 	//Horizontal Movement
 	//Check Collision
-	if(place_meeting(x+horzsp,y,obj_wall))
+	if(place_meeting(x+horzsp,y,obj_wall_block))
 	{
 		//Move pixel by pixel towards the ground
-		while(!place_meeting(x+sign(horzsp),y,obj_wall))
+		while(!place_meeting(x+sign(horzsp),y,obj_wall_block))
 		{
 			x = x + sign(horzsp);
 		}
@@ -68,7 +68,7 @@ function Movement()
 	y = y + vertsp;
 }
 
-function SelectToHighlight()
+function SelectToHighlight()//To be updated because it's using somewhat roundabound way to detect interactibles
 {
 	with(obj_interactible)
 	{
@@ -80,33 +80,24 @@ function SelectToHighlight()
 	}
 }
 
-function CameraFollow()
+//Check players health
+function HandleState()
 {
-	// Get player position
-	var player_x = obj_player.x;
-	var player_y = obj_player.y;
-
-	// Update camera position
-	var target_x = player_x - (camera_width / 2);
-	var target_y = player_y - (camera_height / 1.5);
-
-	// Smooth camera follow (optional)
-	var smooth_factor = 0.1;
-	var cam_x = camera_get_view_x(view_camera[0]);
-	var cam_y = camera_get_view_y(view_camera[0]);
-	var new_cam_x = lerp(cam_x, target_x, smooth_factor);
-	var new_cam_y = lerp(cam_y, target_y, smooth_factor);
-
-	camera_set_view_pos(view_camera[0], new_cam_x, new_cam_y);
+	if(state != PLAYER_STATE.ATTACKING)
+	{
+		GetInput();
+		Movement();
+		Animate2dMovement(spr_player_idle, spr_player_run, horzsp, is_animating);
+		CheckHealth();
+	}
+	if(state == STATE.DYING)
+	{
+		instance_destroy();
+	}
 }
 
 //EXECUTION
-if(state != PLAYER_STATE.ATTACKING)
-{
-	GetInput();
-	Movement();
-	Animate2dMovement(spr_player_idle, spr_player_run, horzsp, is_animating);
-}
+HandleState();
 
 //CameraFollow();
 SelectToHighlight();

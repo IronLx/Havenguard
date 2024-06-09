@@ -38,3 +38,15 @@ function Animate2dMovement(_idle_sprite, _running_sprite, _horzsp, _is_animating
 	//Direction
 	if (_horzsp != 0) image_xscale = sign(_horzsp);
 }
+
+function CheckHealth()
+{
+	if (hp < 0)
+	{
+		state = STATE.DYING;
+	}
+}
+
+
+global.player_allied_objects = [obj_player, obj_peon, obj_barricade_built, obj_townhall_0];
+global.player_enemy_objects = [obj_enemy];

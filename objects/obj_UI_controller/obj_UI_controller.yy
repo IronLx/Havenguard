@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_townhall",
-  "eventList":[],
+  "%Name":"obj_UI_controller",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_townhall",
+  "name":"obj_UI_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Misc",
+    "path":"folders/Objects/Misc.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactible",
-    "path":"objects/obj_interactible/obj_interactible.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_townhall",
-    "path":"sprites/spr_townhall/spr_townhall.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

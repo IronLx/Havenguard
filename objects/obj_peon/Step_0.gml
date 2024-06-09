@@ -94,10 +94,10 @@ function Movement()
 	vertsp = vertsp + grav;
 
 	//Horizontal Collision
-	if(place_meeting(x+horzsp,y,obj_wall))
+	if(place_meeting(x+horzsp,y,obj_wall_block))
 	{
 		//Move pixel by pixel towards the walls
-		while(!place_meeting(x+sign(horzsp),y,obj_wall))
+		while(!place_meeting(x+sign(horzsp),y,obj_wall_block))
 		{
 			x = x + sign(horzsp);
 		}
@@ -128,6 +128,7 @@ function Movement()
 	y = y + vertsp;
 }
 
+CheckHealth();
 HandleState();
 Movement();
-Animate2dMovement(spr_peon, spr_peon_run, horzsp);
+Animate2dMovement(spr_peon, spr_peon_run, horzsp, is_animating);

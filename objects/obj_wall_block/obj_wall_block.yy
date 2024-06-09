@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_level_up_button",
+  "%Name":"obj_wall_block",
   "eventList":[],
   "managed":true,
-  "name":"obj_level_up_button",
+  "name":"obj_wall_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Misc",
+    "path":"folders/Objects/Misc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_level_up_button",
-    "path":"sprites/spr_level_up_button/spr_level_up_button.yy",
+    "name":"spr_wall",
+    "path":"sprites/spr_wall/spr_wall.yy",
   },
   "spriteMaskId":null,
   "visible":true,

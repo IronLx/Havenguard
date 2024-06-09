@@ -5,4 +5,3 @@
 event_inherited();
 
 hp = 100;
-level = 0;

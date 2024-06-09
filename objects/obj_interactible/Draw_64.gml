@@ -2,7 +2,7 @@
 // You can write your code in this editor
 g_x = x - camera_get_view_x(view_camera[0]);
 g_y = y - camera_get_view_y(view_camera[0]);
-if (is_selected)
+if (is_selected && is_upgradeable && state == STATE.IDLE)
 {
 	draw_sprite(spr_highlight, 0, g_x, g_y + highlight_h);
 }

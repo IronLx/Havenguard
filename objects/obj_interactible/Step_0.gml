@@ -14,14 +14,13 @@ function HandleState()
 			{
 				progress = 0;
 				//level up TBC
-				instance_change(obj_barricade_built,true);
+				level++;
 				state = STATE.IDLE;
 			}
 			break;
 		case(STATE.IDLE):
 			break;
 	}
-	
 }
 
 HandleState();

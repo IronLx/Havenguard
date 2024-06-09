@@ -4,6 +4,7 @@ horzsp = 0;
 vertsp = 0;
 grav = 0.3;
 walksp = 1;
+is_animating = false;
 
 //idle movement
 idle_dist = 50;

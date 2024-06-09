@@ -9,4 +9,3 @@ range = 0;
 owner = noone;
 attack_damage = 20;
 
-targets = [obj_enemy];

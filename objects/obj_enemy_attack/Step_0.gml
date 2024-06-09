@@ -23,23 +23,6 @@ if (!hit_registered && place_meeting(x, y, targets))
 	        var _target = instance_place(x, y, _target_type);
 	        if (_target != noone) {
 	            _target.hp -= attack_damage;
-	            if (_target.hp <= 0) 
-				{
-	                switch(_target_type)
-					{
-						case(obj_peon):
-							_target.state = STATE.DYING;
-							break;
-						case(obj_player):
-							instance_destroy(_target);
-							break;
-						case(obj_barricade_built):
-							with(_target)
-								instance_change(obj_barricade_unbuilt,true);
-							break;
-					}
-	            }
-	            break; // Exit the loop after handling the collision
 	        }
 	    }
 	}
