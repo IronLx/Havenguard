@@ -4,5 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-level = 0;
-upgrade_cost = 1;
+CheckHealth();
+
+if(state == STATE.DYING)
+{
+	instance_change(obj_barricade_unbuilt, true);
+}

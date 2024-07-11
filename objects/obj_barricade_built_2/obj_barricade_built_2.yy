@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_attack",
+  "%Name":"obj_barricade_built_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player_attack",
+  "name":"obj_barricade_built_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Attacks",
-    "path":"folders/Objects/Attacks.yy",
+    "name":"Interactibles",
+    "path":"folders/Objects/Interactibles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactible",
+    "path":"objects/obj_interactible/obj_interactible.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_attack_effect",
-    "path":"sprites/spr_player_attack_effect/spr_player_attack_effect.yy",
+    "name":"spr_barricade_3",
+    "path":"sprites/spr_barricade_3/spr_barricade_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

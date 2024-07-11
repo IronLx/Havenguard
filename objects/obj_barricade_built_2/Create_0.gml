@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-level = 0;
-upgrade_cost = 1;
+level = 2;
+hp = 400;

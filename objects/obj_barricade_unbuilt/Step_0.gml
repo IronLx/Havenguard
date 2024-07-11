@@ -12,10 +12,21 @@ if (level != pre_level)
 	
 	//now we can change the instance into it's new form
 	//I should be able to make it more universal and share between all interactibles but for now let's HARD CODE IT
-	instance_change(obj_barricade_built,true);
+	switch(level)
+	{
+		case(0): 
+			instance_change(obj_barricade_unbuilt,true);
+			break;
+		case(1):
+			instance_change(obj_barricade_built,true);
+			break;
+		case(2):
+			instance_change(obj_barricade_built_2,true);
+			break;
+	}
 }
 
-if(previous_state != state && state == STATE.SELECTED_FOR_UPGRADE)
+if(previous_state != state && state == STATE.SELECTED_FOR_UPGRADE && global.resources[RESOURCE.WOOD] >= upgrade_cost)
 {
 	global.resources[RESOURCE.WOOD] -= upgrade_cost;
 }
@@ -24,5 +35,9 @@ if(previous_state != state && state == STATE.SELECTED_FOR_UPGRADE)
 if(global.resources[RESOURCE.WOOD] >= upgrade_cost && object_index == obj_barricade_unbuilt)
 {
 	is_upgradeable = true;
+}
+else
+{
+	is_upgradeable = false;
 }
 
