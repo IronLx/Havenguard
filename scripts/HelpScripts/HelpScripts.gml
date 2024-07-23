@@ -48,5 +48,17 @@ function CheckHealth()
 }
 
 
-global.player_allied_objects = [obj_player, obj_peon, obj_barricade_built, obj_barricade_built_2, obj_townhall_0];
-global.player_enemy_objects = [obj_enemy];
+global.player_allied_objects = 
+[
+	obj_player, 
+	obj_peon, 
+	obj_barricade_built, 
+	obj_barricade_built_2, 
+	obj_townhall_0,
+	obj_lumber_yard_built,
+];
+
+global.player_enemy_objects = 
+[
+	obj_enemy
+];

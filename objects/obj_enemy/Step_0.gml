@@ -3,7 +3,7 @@ function HandleState()
 	switch(state)
 	{
 		case(STATE.MARCHING):
-			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE
+			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE OF ATTACK
 			Movement();
 			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, global.player_allied_objects, 0, 0))
 			{
