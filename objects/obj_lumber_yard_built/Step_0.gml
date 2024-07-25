@@ -13,5 +13,3 @@ if(state == STATE.DYING)
 {
 	instance_change(obj_lumber_yard_unbuilt, true);
 }
-
-

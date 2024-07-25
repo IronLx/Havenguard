@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_attack",
+  "%Name":"obj_bandit_camp",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_attack",
+  "name":"obj_bandit_camp",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_attack_effect",
-    "path":"sprites/spr_enemy_attack_effect/spr_enemy_attack_effect.yy",
+    "name":"spr_bandit_camp",
+    "path":"sprites/spr_bandit_camp/spr_bandit_camp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

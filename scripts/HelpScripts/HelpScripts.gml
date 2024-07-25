@@ -10,6 +10,7 @@ enum STATE
 	MARCHING,
 	ATTACKING,
 	DYING,
+	GENERATING
 }
 
 enum PLAYER_STATE
@@ -60,5 +61,6 @@ global.player_allied_objects =
 
 global.player_enemy_objects = 
 [
-	obj_enemy
+	obj_bandit,
+	obj_bandit_camp
 ];

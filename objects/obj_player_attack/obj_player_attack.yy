@@ -9,8 +9,8 @@
   "name":"obj_player_attack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Attacks",
-    "path":"folders/Objects/Attacks.yy",
+    "name":"Characters",
+    "path":"folders/Objects/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
