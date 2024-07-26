@@ -25,6 +25,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_archer","order":3,"path":"objects/obj_archer/obj_archer.yy",},
     {"name":"obj_bandit_camp","order":2,"path":"objects/obj_bandit_camp/obj_bandit_camp.yy",},
     {"name":"obj_barricade_built_2","order":4,"path":"objects/obj_barricade_built_2/obj_barricade_built_2.yy",},
     {"name":"obj_barricade_unbuilt","order":1,"path":"objects/obj_barricade_unbuilt/obj_barricade_unbuilt.yy",},
@@ -54,6 +55,7 @@
     {"name":"spr_lumber_temp","order":4,"path":"sprites/spr_lumber_temp/spr_lumber_temp.yy",},
     {"name":"spr_p_bar","order":4,"path":"sprites/spr_p_bar/spr_p_bar.yy",},
     {"name":"spr_p_filling","order":5,"path":"sprites/spr_p_filling/spr_p_filling.yy",},
+    {"name":"spr_peon_1","order":10,"path":"sprites/spr_peon_1/spr_peon_1.yy",},
     {"name":"spr_peon_run","order":4,"path":"sprites/spr_peon_run/spr_peon_run.yy",},
     {"name":"spr_peon","order":3,"path":"sprites/spr_peon/spr_peon.yy",},
     {"name":"spr_player_attack_effect","order":9,"path":"sprites/spr_player_attack_effect/spr_player_attack_effect.yy",},

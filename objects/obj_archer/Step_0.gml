@@ -1,35 +1,17 @@
+/// @description Handles it's State Machine and Movement
+
+//FUNCTIONALITY
 function HandleState()
 {
 	switch(state)
 	{
-		case(STATE.MARCHING):
-			//CHECK IF THERE'S ANYONE DEFINED IN CREATE IN RANGE OF ATTACK
-			Movement();
-			if (collision_line(x, y, x + lengthdir_x(attack_detection_range, direction), y, global.player_allied_objects, 0, 0))
-			{
-				state = STATE.ATTACKING;
-				sprite_index = spr_enemy_attack;
-				image_index = 0; // Ensure the animation starts from the beginning
-				image_speed = 1; // Set the animation speed
-				alarm[0] = 50;
-				alarm[1] = 30;
-			}
-			break;
+		case(STATE.MOVING):
+			//station the archer in front of the furthest wall to defend it while dividing all archers equally between sides
 		case(STATE.ATTACKING):
-			break;
-		case(STATE.DYING):
-			instance_destroy();
-			break;
+			//Animate an attack with the bow and go back to Idle
+		case(STATE.IDLE):
+			//Wait at the position for incoming enemies or a change of state
 	}
-}
-
-//Select where to march (towards the player's townhall)
-if(instance_exists(obj_townhall_0))
-{
-	if(x < obj_townhall_0.x)
-		calc_move = 1;
-	else
-		calc_move = -1;
 }
 
 function Movement()
@@ -75,3 +57,4 @@ function Movement()
 
 CheckHealth();
 HandleState();
+Movement();
